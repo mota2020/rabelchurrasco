@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem Vindo ao Mundo da Carne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+        }
+
+        header .social-icons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header .social-icons a {
+            margin: 10px 0;
+        }
+
+        header .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        header .social-icons .tiktok-logo {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .meats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .meat-item {
+            text-align: center;
+        }
+
+        .meat-item img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .bio {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .bio img {
+            max-width: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+
+        #p5-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="URL_PUBLICO_DA_IMAGEM" alt="Seja Bem Vindo ao Mundo da Carne Logo" class="logo">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/rebelamericanbbq/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@chefflavioc" target="_blank">
+                <img class="tiktok-logo" src="https://img.freepik.com/vetores-premium/logo-do-tik-tok_578229-290.jpg" alt="TikTok Logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/TikTok_icon.png" alt="TikTok">
+            </a>
+        </div>
+        <h1>Seja Bem Vindo ao Mundo da Carne</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Rebel American BBQ</h2>
+        </section>
+        <section class="meats">
+            <div class="meat-item">
+                <img src="https://img.freepik.com/fotos-gratis/aproxime-se-com-uma-deliciosa-comida-asiatica_23-2150535873.jpg?t=st=1716254136~exp=1716257736~hmac=a3e0a0089647443e4f001308d06f8c00adfbdb31e60d8404ee0fd7f6211ee6a0&w=360" alt="Asian Food">
+                <p>Asian Food</p>
+            </div>
+            <div class="meat-item">
+                <img src="https://img.freepik.com/fotos-premium/bifes-com-tomate-grelhado-cogumelos-e-milho_266870-1336.jpg?w=360" alt="Grilled Beef">
+                <p>Grilled Beef</p>
+            </div>
+            <div class="meat-item">
+                <img src="https://img.freepik.com/fotos-premium/pernil-de-porco-assado-em-uma-vista-superior-da-placa-de-madeira_268847-4428.jpg?w=360" alt="Roasted Pork">
+                <p>Roasted Pork</p>
+            </div>
+            <div class="meat-item">
+                <img src="https://img.freepik.com/fotos-premium/espetadas-de-carne-de-porco-grelhadas-suculentas-em-uma-tabua-de-corte_268847-4669.jpg?w=360" alt="Grilled Pork Skewers">
+                <p>Grilled Pork Skewers</p>
+            </div>
+        </section>
+        <section class="bio">
+            <img src="https://media-gru2-1.cdn.whatsapp.net/v/t61.24694-24/321242310_859205122006982_8517250670449668635_n.jpg?ccb=11-4&oh=01_Q5AaIOqBbtVEUpTe7vPC4jgxVx25UEm6cBhnf9_Efr_FInyt&oe=66561936&_nc_sid=e6ed6c&_nc_cat=101" alt="Rebel American BBQ">
+            <div>
+                <h3>About Us</h3>
+                <p>Rebel American BBQ is not just a restaurant, it's a tradition. Founded by Chef Flavio, our establishment has become a cornerstone of the barbecue community. With years of experience and a deep passion for barbecue, Chef Flavio brings the authentic flavors of American BBQ to every dish.</p>
+                <p>Our mission is to provide an unparalleled dining experience, combining high-quality ingredients with exceptional service. Whether you're a barbecue enthusiast or a first-time visitor, we promise a meal that will tantalize your taste buds and leave you craving more.</p>
+            </div>
+        </section>
+        <div id="p5-container"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script>
+        function setup() {
+            let canvas = createCanvas(windowWidth, 400);
+            canvas.parent('p5-container');
+        }
+
+        function draw() {
+            background('#0000FF'); // Blue background color
+            noStroke();
+            fill(255);
+            for (let i = 0; i < 100; i++) {
+                ellipse(random(width), random(height), random(10, 50));
+            }
+        }
+
+        function windowResized() {
+            resizeCanvas(windowWidth, 400);
+        }
+    </script>
+</body>
+</html>
